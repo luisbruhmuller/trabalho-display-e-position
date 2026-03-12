@@ -552,4 +552,16 @@
 
 
 
-
+#position {
+    display: inline-block;
+    display: flex;
+}
+.positions {
+    background-color: goldenrod;
+    height: 200px;
+    width: 180px;
+    margin: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
