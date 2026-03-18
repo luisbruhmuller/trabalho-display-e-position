@@ -140,7 +140,63 @@
                     <p class="m-0">Pai com block flow-root</p>
                 </div>
             </div>
+
+            <div class="Displays">
+                <h1>Display 14: inline-flow</h1>
+                <p>No CSS ele define que um elemento, não inicia uma nova linha e ocupa apenas a largura necessária , e faz com que os elementos contenham flutuadores e contenham margens/padding internamente.</p>
+                <span class="caixa d-inline-flow m-0">
+                    <span class="item">Item (inline-flow)</span>
+                </span>
+            </div>
+
+            <div class="Displays">
+                <h1>Display 15: inline-flow-root</h1>
+                <p>é para fluxo de conteúdo e texto, ocupando o mínimo de espaço, criando containers e organizando.</p>
+                <span class="caixa d-inline-flow-root m-0">
+                    <div class="item float mb-0" style="padding: 5px;">Float</div>
+                    <span style="line-height: 2;">Inline com flow-root</span>
+                </span>
+            </div>
         </div>
+
+
+        <div id="Position">
+            <div class="positionstitle">
+                <h1>Positions</h1>
+            </div>
+            <div class="positions">
+                <h1>Position 1: Static</h1>
+                <p>Static é o padrão dentro do css, ele apenas segue o fluxo normal do documento, posicionando-se onde foi declarado no HTML. Propriedades de alinhamento não se aplicam a ele, como left, top, right entre outros.</p>
+                <div class="exemplo-box box-static">Box 1</div>
+                <div class="exemplo-box box-static">Box 2 (Static)</div>
+            </div>
+            <div class="positions">
+                <h1>Position 2: Relative</h1>
+                <p>Relative é um posicionamento relativo, o elemento pertence ao fluxo normal do documento, mas pode ser movido em relação à sua posição original usando top, bottom, left ou right.</p>
+                <div class="exemplo-box">Caixa Normal</div>
+                <div class="exemplo-box box-relative">Caixa Relative</div>
+            </div>
+             <div class="positions" style="position: relative;">
+                <h1>Position 3: Absolute</h1>
+                <p>Absolute é um posicionamento absoluto, ele é removido ao fluxo normal do documento (outros elementos ignoram sua presença). Posiciona-se em relação ao seu ancestral (pai) mais próximo que tenha position diferente de static (ex: relative, absolute, fixed). Se nenhum pai estiver posicionado, usa o body.</p>
+                <div class="exemplo-box box-absolute">Caixa Absolute (presa à div pai)</div>
+            </div>
+            <div class="positions">
+                <h1>Position 4: Fixed</h1>
+                <p>Fixed é um posicionamento fixo, não tem muito o que acrescentar mas, ele não segue o fluxo normal do documento, é usado para ícones flutuantes, sobreposição de elementos.</p>
+                <div class="exemplo-box box-fixed">Fixed Box <br> (Sempre no canto inferior)</div>
+            </div>
+             <div class="positions">
+                <h1>Position 5: Sticky</h1>
+                <p>Sticky age como um relative até que a rolagem atinja um ponto definido (exemplo: top:0;), momento em que se torna fixed, é usado em cabeçalhos de tabelas, menus que grudam no topo ao passar por eles.</p>
+                <div class="container-sticky">
+                    <div class="exemplo-box box-sticky">Sticky Box (Role esta área!)</div>
+                    <p>Role para baixo...</p><p>Role para baixo...</p><p>Role para baixo...</p><p>Role para baixo...</p><p>Role para baixo...</p>
+                </div>
+            </div>
+
+        </div>
+
     </main>
     <footer>
 

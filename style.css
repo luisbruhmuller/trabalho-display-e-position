@@ -203,3 +203,26 @@
 .d-block-flow-root {
     display: block flow-root;
 }
+
+.d-inline-flow {
+    display: inline flow;
+    display: inline-block;
+}
+
+.d-inline-flow-root {
+    display: inline flow-root;
+}
+
+.float {
+    float: left;
+    margin-right: 15px;
+    width: 80px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
