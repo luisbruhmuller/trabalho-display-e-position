@@ -21,109 +21,126 @@
             </div>
 
             <div class="Displays">
-                <h1>Display 1:
-                </h1>
+                <h1>Display 1: block</h1>
+                <p>ele faz com que um elemento HTML ocupe toda a largura disponível, elementos de bloco se alinham verticalmente, e é permitido regular largura (width) e altura (height) além de margem e preenchimentos (padding). e ele inicia uma nova linha empurrando o próximo elemento para baixo.</p>
+                <div class="caixa display-block">
+                    <span class="item">Item 1 (block)</span>
+                    <span class="item">Item 2 (block)</span>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 2:
-                </h1>
+                <h1>Display 2: inline</h1>
+                <p>ele faz com que elementos em HTML fluam na mesma linha, minimizando o tamanho ocupado usando apenas o necessário, sem iniciar uma nova linha, Elementos feitos com Inline não respeitam propriedades de altura e largura e suas margens superiores e inferiores não funcionam, inline é ideal para estruturar texto e itens lado a lado.</p>
+                <div class="caixa">
+                    <div class="item display-inline">Item 1 (inline)</div>
+                    <div class="item display-inline">Item 2 (inline)</div>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 3:
-                </h1>
+                <h1>Display 3: inline-block</h1>
+                <p>Ele combina o melhor dos dois mundos do inline e do Block, ele permite que elementos fiquem lado a lado na mesma linha (em forma de texto), e ele aceita propriedades de tamanho (height e width), o que antes não seria possível com o inline, seria ideal para criar menus, botões e cards.</p>
+                <div class="caixa">
+                    <div class="item display-inline-block">Botão 1</div>
+                    <div class="item display-inline-block">Botão 2</div>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 4:
-                </h1>
+                <h1>Display 4: flex</h1>
+                <p>É uma propriedade CSS3 que transforma um container HTML em um contêiner flexível, alinhando automaticamente seus elementos filhos (itens) em uma linha ou coluna, é a forma mais eficiente de criar layouts responsivos, facilitando a distribuição de espaço.</p>
+                <div class="caixa display-flex">
+                    <div class="item">Flex 1</div>
+                    <div class="item">Flex 2</div>
+                    <div class="item">Flex 3</div>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 5:
-                </h1>
+                <h1>Display 5: inline-flex</h1>
+                <p>Ela combina o comportamento do inline (que já foi explicado anteriormente) e dp Flex, que cuida dos elementos internos (filhos), e ele não força uma quebra de linha no container.</p>
+                <p>Texto antes <span class="caixa display-inline-flex reset-margin">
+                    <span class="item reset-margin">A</span>
+                    <span class="item reset-margin">B</span>
+                </span> Texto depois</p>
             </div>
 
             <div class="Displays">
-                <h1>Display 6:
-                </h1>
+                <h1>Display 6: grid</h1>
+                <p>É uma ferramenta CSS que cria layouts bidimensionais (linhas e colunas simultaneamente), para organizar elementos em uma página web. ele é mais eficiente do que outros como flex, pois ele é muito preciso.</p>
+                <div class="caixa display-grid">
+                    <div class="item">Célula 1</div>
+                    <div class="item">Célula 2</div>
+                    <div class="item">Célula 3</div>
+                    <div class="item">Célula 4</div>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 7:
-                </h1>
+                <h1>Display 7: inline-grid</h1>
+                <p>é uma propriedade que define um elemento como container de grade (grid), permitindo o uso de linhas e colunas criando um tipo de tabela, e ele usa apenas o espaço necessário permitindo elementos ao seu lado.</p>
+                <p>Texto <span class="caixa display-inline-grid reset-margin">
+                    <span class="item reset-margin">G1</span>
+                    <span class="item reset-margin">G2</span>
+                </span> ao lado</p>
             </div>
 
             <div class="Displays">
-                <h1>Display 8:
-                </h1>
+                <h1>Display 8: flow-root</h1>
+                <p>no CSS cria um novo tipo de formação de Bloco (BFC) forçando o container a envolver elementos float (flutuantes), sem precisar de técnicas antigas como clearfix, e assim acaba protegendo o conteúdo e não tendo colapso de margens.</p>
+                <div class="caixa d-flow-root">
+                    <div class="item float">Float</div>
+                    <p class="m-0">O container "flow-root" engloba o flutuante sem colapsar.</p>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 9:
-                </h1>
+                <h1>Display 9: table</h1>
+                <p>Ele funciona fazendo que elementos HTML como &lt;div&gt; virarem tabelas &lt;table&gt;, organizando conteúdo em linhas e células sem usar tags de tabela estruturais. é ideal para alinhamentos verticais complexos e layouts responsivos, definindo comportamentos como table-row e table-cell.</p>
+                <div class="caixa d-table">
+                    <div class="d-table-row">
+                        <div class="d-table-cell">Célula A</div>
+                        <div class="d-table-cell">Célula B</div>
+                    </div>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 10:
-                </h1>
+                <h1>Display 10: block-flow</h1>
+                <p>define que um elemento ocupe toda a largura possível, iniciando em uma nova linha e forçando a quebra de linha.</p>
+                <div class="caixa d-block-flow">
+                    <span class="item">Item (block-flow)</span>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 11:
-                </h1>
+                <h1>Display 11: block-flex</h1>
+                <p>ele faz com que elementos fiquem em blocos verticais, ocupando toda a largura possível, e flex faz com que eles fiquem alinhados de forma responsiva.</p>
+                <div class="caixa d-block-flex">
+                    <div class="item">Block Flex 1</div>
+                    <div class="item">Block Flex 2</div>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 12:
-                </h1>
+                <h1>Display 12: block-grid</h1>
+                <p>Block faz com que o elemento ocupe toda a largura e quebre as linhas e o grid cria um layout bidimensional complexo, organizando em linhas e colunas.</p>
+                <div class="caixa d-block-grid">
+                    <div class="item">Block Grid 1</div>
+                    <div class="item">Block Grid 2</div>
+                </div>
             </div>
 
             <div class="Displays">
-                <h1>Display 13:
-                </h1>
+                <h1>Display 13: block-flow-root</h1>
+                <p>faz com que tenha a quebra de linhas e que fique em blocos porém, com o flow-root ele faz com que os elementos não saiam do contêiner pai.</p>
+                <div class="caixa d-block-flow-root">
+                    <div class="item float">Float</div>
+                    <p class="m-0">Pai com block flow-root</p>
+                </div>
             </div>
-
-            <div class="Displays">
-                <h1>Display 14:
-                </h1>
-            </div>
-
-
-
-
-
         </div>
-
-
-        <div id="Position">
-            <div class="positionstitle">
-                <h1>Positions</h1>
-            </div>
-            <div class="positions">
-                <h1>Position 1: Static
-                </h1>
-            </div>
-            <div class="positions">
-                <h1>Position 2: Relative
-                </h1>
-            </div>
-             <div class="positions">
-                <h1>Position 3: Absolute
-                </h1>
-            </div>
-            <div class="positions">
-                <h1>Position 4: Fixed
-                </h1>
-            </div>
-             <div class="positions">
-                <h1>Position 5: Sticky
-                </h1>
-            </div>
-
-        </div>
-
     </main>
     <footer>
 

@@ -1,560 +1,12 @@
-.principal{
+.principal {
     text-align: center;
     background-color: rgb(238, 209, 171);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #position {
     display: -ms-inline-grid;
 }
+
 .positions {
     background-color: goldenrod;
     margin: 20px;
@@ -579,4 +31,175 @@
     padding: 20px;
     align-content: center;
     align-items: center;
+}
+
+.exemplo-box {
+    width: 200px;
+    height: 50px;
+    background-color: lightcoral;
+    border: 2px solid darkred;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.box-static {
+    position: static;
+}
+
+.box-relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: steelblue;
+    border-color: darkblue;
+}
+
+.box-absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: seagreen;
+    border-color: darkgreen;
+    width: 250px;
+}
+
+.box-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: darkviolet;
+    border-color: indigo;
+    width: auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-sticky {
+    height: 150px;
+    overflow-y: scroll;
+    background-color: #fdf5e6;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    position: relative;
+    color: black;
+}
+
+.box-sticky {
+    position: sticky;
+    top: 10px;
+    
+    background-color: darkorange;
+    border-color: sienna;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.caixa {
+    background-color: bisque;
+    border: 2px dashed peru;
+    padding: 10px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.item {
+    background-color: lightseagreen;
+    border: 1px solid darkslategray;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.d-block>.item {
+    display: block;
+}
+
+.d-inline>.item,
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block>.item {
+    display: inline-block;
+    width: 120px;
+}
+
+.d-flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+    gap: 10px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 5px;
+}
+
+.d-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.d-inline-grid {
+    display: inline-grid;
+    gap: 10px;
+    margin: 0;
+    padding: 5px;
+}
+
+.d-inline-grid>.item {
+    padding: 5px;
+    margin: 0;
+}
+
+.d-flow-root {
+    display: flow-root;
+}
+
+.d-table {
+    display: table;
+    width: 100%;
+    border-spacing: 5px;
+}
+
+.d-table-row {
+    display: table-row;
+}
+
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border: 1px solid darkslategray;
+    border-radius: 4px;
+}
+
+.d-block-flow>.item {
+    display: block flow;
+}
+
+.d-block-flex {
+    display: block flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.d-block-grid {
+    display: block grid;
+    gap: 10px;
+}
+
+.d-block-flow-root {
+    display: block flow-root;
 }
